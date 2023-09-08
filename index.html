@@ -3,18 +3,33 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Page Creation with Specific Elements</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div id="my-personal-and-real-time-data">
+		<div class="mypage">
+			<!--My Slack Username-->
 			<h1 data-testid="slackUserName">Henrietta(Hariet)</h1>
-			<img src="slackpix.jpg" alt="Henrietta(Hariet)" />
+
+			<!--Slack Display Picture-->
+			<img
+				data-testid="slackDisplayImage"
+				src="images/slackpix.jpg"
+				alt="Henrietta(Hariet)"
+			/>
+
+			<!--Current Day of The Week-->
 			<p data-testid="currentDayOfTheWeek">Friday</p>
+
+			<!--Current UTC Time-->
 			<p data-testid="currentUTCTime">10.49 AM</p>
+
+			<!--Track Name-->
 			<p data-testid="myTrack">Frontend</p>
+
+			<!--My Github URL-->
 			<a
-				href="https://github.com/Harietonyeabor/repository"
+				href="https://github.com/Harietonyeabor/HNG.git"
 				data-testid="githubURL"
 				>GitHub URL</a
 			>

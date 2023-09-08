@@ -1,4 +1,4 @@
-function returnCurrentDayOftheWeek() {
+function updateCurrentDayOftheWeek() {
 	const daysOfTheWeek = [
 		"Sunday",
 		"Monday",
@@ -8,17 +8,26 @@ function returnCurrentDayOftheWeek() {
 		"Friday",
 		"Saturday",
 	];
-	const currentDateOftheWeek = new Date();
-	return daysOfTheWeek[currentDateOftheWeek.getUTCDay()];
+	const currentDay = new Date();
+	return daysOfTheWeek[currentDay.getUTCDay()];
 	document.getElementById("currentDayOfTheWeek").textcontent = daysOfTheWeek;
 }
 
-function getCurrentUTCTime() {
-	const currentDateOftheWeek = new Date();
-	return currentDateOftheWeek.toUTCString();
+function updateCurrentUTCTime() {
+	const currentTimeOfTheWeek = new Date();
+	return currentTimeOfTheWeek.toUTCString();
+	const currentTimeUTC = currentTimeOfTheWeek.replace("GMT", "UTC");
+	document.getElementById("currentUTCTime").textcontent =
+		currentTimeOfTheWeek;
 }
 
-function returnTrackName() {
-	const trackName = "Frontend";
+function trackName() {
+	const myTrackName = "Frontend";
 	document.querySelector("myTrack").textContent = `Track: ${track}`;
 }
+
+setInterval(updateCurrentUTCTime, 1000);
+
+updateCurrentDayOftheWeek();
+updateCurrentUTCTime();
+trackName();

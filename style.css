@@ -1,10 +1,21 @@
-#my-personal-and-real-time-data {
+.mypage {
 	text-align: center;
 	margin: 50px;
 }
 
-img {
+#slackDisplayImage {
 	width: 300px;
 	height: 300px;
 	border-bottom: 500px;
+}
+
+#slackUserName {
+	font: 20px;
+	font-weight: bold;
+}
+
+#currentDayOfTheWeek,
+#currentUTCTime,
+#myTrack {
+	font-size: 15px;
 }
