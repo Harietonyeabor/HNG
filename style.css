@@ -1,21 +1,29 @@
 .mypage {
 	text-align: center;
-	margin: 50px;
+	margin: 0;
+	background-color: aquamarine;
 }
 
 #slackDisplayImage {
-	width: 300px;
-	height: 300px;
-	border-bottom: 500px;
+	width: 150px;
+	height: 150px;
+	border-radius: 70px;
+	margin: 20px;
 }
 
 #slackUserName {
-	font: 20px;
+	margin-top: px;
+	font-size: 70px;
 	font-weight: bold;
 }
 
 #currentDayOfTheWeek,
 #currentUTCTime,
 #myTrack {
-	font-size: 15px;
+	font-size: 50px;
+}
+
+#githubURL {
+	display: block;
+	margin-top: 50px;
 }
